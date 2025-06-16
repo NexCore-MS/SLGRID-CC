@@ -197,7 +197,7 @@ function parseJson(json) {
             } else if (listCreditToUse === null) {
               listCreditToUse = creditToUse;
             }
-            for (license in creditToUse.licenses) {
+            for (const license of creditToUse.licenses) {
               if (!licensesFound.includes(license)) {
                 licensesFound.push(license);
               }
